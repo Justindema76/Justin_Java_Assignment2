@@ -96,7 +96,7 @@ public class Warsim {
           // assign the damage amount to the enemy
           enemy.takeDamage(eDamage);
 
-          System.out.println("Player dealt: " + eDamage  + " enemy!"); // testing
+          System.out.println("Player dealt: " + eDamage  + " damage to enemy!"); // testing
 
           // check to see if the enemy is dead!
           if(enemy.getHealth() <= 0) { // enemy is dead!
@@ -117,7 +117,7 @@ public class Warsim {
         pDamage = eWeapon.strike(attackType, enemy.getDexterity(), enemy.getStrength());
         player.takeDamage(pDamage);
 
-        System.out.println("Enemy dealt: " + pDamage + " to you!"); // testing
+        System.out.println("Enemy dealt: " + pDamage + " damage to you!"); // testing
 
         if(player.getHealth() <= 0){
           winner = "Enemy";
